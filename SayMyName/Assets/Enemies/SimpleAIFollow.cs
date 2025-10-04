@@ -48,6 +48,8 @@ public class SimpleAIFollowScript : MonoBehaviour
     {
         if(cameraGameObjectVariable.Value == null)
             cameraGameObjectVariable.Changed.Register(OnCameraGameObjectVariableChanged);
+        else
+            OnCameraGameObjectVariableChanged();
     }
 
     private void OnDisable()

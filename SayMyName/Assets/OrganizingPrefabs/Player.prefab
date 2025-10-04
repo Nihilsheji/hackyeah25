@@ -134,6 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePlayerEvent: {fileID: 11400000, guid: 531c27cab0d8d144098704efe3eda732, type: 2}
   playerDied: {fileID: 11400000, guid: 84e3e2b54599fea44a08af605d5c375e, type: 2}
+  isPlayerImmortal: {fileID: 11400000, guid: db299a81326785d43935029a24cfb161, type: 2}
 --- !u!1 &3879960178132704212
 GameObject:
   m_ObjectHideFlags: 0

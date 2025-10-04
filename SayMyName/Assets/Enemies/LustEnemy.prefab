@@ -134,7 +134,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3127079539383358916, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6563738470568339202}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4731042960009862245, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6969183121397522789}
+    - targetCorrespondingSourceObject: {fileID: 4731042960009862245, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7113286937484794018}
   m_SourcePrefab: {fileID: 100100000, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
 --- !u!4 &97855046158155613 stripped
 Transform:
@@ -146,6 +152,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 170185206757876487, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
   m_PrefabInstance: {fileID: 3043932935169911449}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7752439200765064956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4731042960009862245, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+  m_PrefabInstance: {fileID: 3043932935169911449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6969183121397522789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7752439200765064956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba611c97cdaee441b0e996d32817649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveAmplitude: 0.05
+  moveDuration: 2
+--- !u!114 &7113286937484794018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7752439200765064956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee4e13a8cdf65349b85919269c52eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationAmplitude: 1
+  rotationDuration: 4
+  rotationAxis: {x: 1, y: 1, z: 1}
 --- !u!1001 &7530217408093592541
 PrefabInstance:
   m_ObjectHideFlags: 0

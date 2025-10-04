@@ -72,10 +72,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14f9183a771751488f5313504d53d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  acceleration: 20
+  walkSpeed: 70
+  acceleration: 100
   cameraTransform: {fileID: 668490774827746194}
-  mouseSensitivity: 2
+  mouseSensitivity: 1
   pitchMin: -85
   pitchMax: 85
   gravity: -30
@@ -177,7 +177,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 120
   orthographic: 0
   orthographic size: 5
   m_Depth: 0

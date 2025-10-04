@@ -84,7 +84,7 @@ MonoBehaviour:
   - unity
   - microphone
   confidenceLevel: 2
-  showOnScreenDebug: 1
+  showOnScreenDebug: 0
 --- !u!1001 &9214087552334404041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93,6 +93,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5772329143339867791}
     m_Modifications:
+    - target: {fileID: 1767684457565684497, guid: fc7ed43edd957ec40b060083bde62927, type: 3}
+      propertyPath: smooth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6855311770247674732, guid: fc7ed43edd957ec40b060083bde62927, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter

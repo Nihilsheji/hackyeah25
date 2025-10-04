@@ -110,4 +110,9 @@ public class CharacterMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+
+    public Vector3 GetVelocity()
+    {
+        return currentVelocity;
+    }
 }

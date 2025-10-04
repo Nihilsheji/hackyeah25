@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14f9183a771751488f5313504d53d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 70
+  walkSpeed: 15
   acceleration: 100
   cameraTransform: {fileID: 6670861018783219035}
   mouseSensitivity: 1

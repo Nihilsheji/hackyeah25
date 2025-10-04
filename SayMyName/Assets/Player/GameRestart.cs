@@ -1,33 +1,40 @@
-using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
+using Sirenix.OdinInspector;
 
 public class GameRestart : MonoBehaviour
 {
     private bool hasRestarted;
 
     [Button]
-    public void RestartGame()
+    public async void RestartGame()
     {
-        if (hasRestarted == true)
+        if (hasRestarted)
             return;
 
         hasRestarted = true;
 
         // Get the current active scene
         Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
 
-        // Load the scene additively
-        SceneManager.LoadSceneAsync(currentScene.name, LoadSceneMode.Additive).completed += (AsyncOperation op) =>
+        // Unload the scene first
+        AsyncOperation unloadOp = SceneManager.UnloadSceneAsync(sceneName);
+        if (unloadOp != null)
         {
-            // Once the new instance is loaded, set it as active
-            Scene newScene = SceneManager.GetSceneByName(currentScene.name);
-            SceneManager.SetActiveScene(newScene);
+            while (!unloadOp.isDone)
+                await Task.Yield(); // Wait for unload to finish
+        }
 
-            // Unload the old scene
-            SceneManager.UnloadSceneAsync(currentScene);
-        };
+        // Then load it again
+        AsyncOperation loadOp = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        if (loadOp != null)
+        {
+            while (!loadOp.isDone)
+                await Task.Yield(); // Wait for load to finish
+        }
+
+        hasRestarted = false;
     }
 }

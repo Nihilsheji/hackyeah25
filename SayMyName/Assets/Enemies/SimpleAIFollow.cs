@@ -16,12 +16,11 @@ public class SimpleAIFollowScript : MonoBehaviour
     [Header("Should start immediately")]
     public bool shouldStartImmediately = true;
 
-    [Header("Is Following")]
-    public bool isFollowing = false;
-
     [Header("Optional: Use NavMesh")]
     public bool useNavMesh = false;
     private UnityEngine.AI.NavMeshAgent navAgent;
+
+    private bool isFollowing = false;
 
     void Start()
     {

@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c4d68b2d7d1904081811698d096a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  cameraGameObjectVariable: {fileID: 11400000, guid: b6060046c4cabe4448e065c4734d3b67, type: 2}
   moveSpeed: 5
   rotationSpeed: 5
   stoppingDistance: 2

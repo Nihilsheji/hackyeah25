@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityAtoms.BaseAtoms;
 
 public class SimpleAIFollowScript : MonoBehaviour
 {
-    [Header("Target Settings")]
-    public Transform target; // The object to follow (usually the player)
+    [SerializeField] private GameObjectVariable cameraGameObjectVariable;
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
@@ -18,9 +18,12 @@ public class SimpleAIFollowScript : MonoBehaviour
 
     [Header("Optional: Use NavMesh")]
     public bool useNavMesh = false;
-    private UnityEngine.AI.NavMeshAgent navAgent;
+    
+    public bool IsInitialized { get; private set; }
 
+    private UnityEngine.AI.NavMeshAgent navAgent;
     private bool isFollowing = false;
+    private Transform target; // The object to follow (usually the player)
 
     void Start()
     {
@@ -39,6 +42,24 @@ public class SimpleAIFollowScript : MonoBehaviour
         {
             this.isFollowing = true;
         }
+    }
+
+    private void OnEnable()
+    {
+        if(cameraGameObjectVariable.Value == null)
+            cameraGameObjectVariable.Changed.Register(OnCameraGameObjectVariableChanged);
+    }
+
+    private void OnDisable()
+    {
+            cameraGameObjectVariable.Changed.Unregister(OnCameraGameObjectVariableChanged);
+    }
+
+    private void OnCameraGameObjectVariableChanged()
+    {
+        target = cameraGameObjectVariable.Value.transform;
+        IsInitialized = true;
+        cameraGameObjectVariable.Changed.Unregister(OnCameraGameObjectVariableChanged);
     }
 
     [Button]

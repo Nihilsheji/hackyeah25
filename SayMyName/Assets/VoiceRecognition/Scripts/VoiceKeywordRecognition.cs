@@ -44,6 +44,8 @@ public class VoiceKeywordRecognition : MonoBehaviour
         
         // Register default keyword actions
         RegisterKeywordActions();
+        StartRecognition();
+        Debug.Log(IsRunning());
     }
 
     private void RegisterKeywordActions()

@@ -35,7 +35,7 @@ public class WindowsSpeechDebugger : MonoBehaviour
     private GUIStyle headerStyle;
     private GUIStyle buttonStyle;
 
-    void Start()
+    void OnEnable()
     {
         LogMessage("=== Windows Speech Recognition Debugger ===");
         LogMessage("Unity Version: " + Application.unityVersion);
@@ -43,6 +43,11 @@ public class WindowsSpeechDebugger : MonoBehaviour
         LogMessage("");
         
         RunDiagnostics();
+    }
+
+    private void OnDisable()
+    {
+        StopRecognizer();
     }
 
     void RunDiagnostics()
@@ -380,6 +385,17 @@ public class WindowsSpeechDebugger : MonoBehaviour
         }
         
         RunDiagnostics();
+    }
+
+    public void StopRecognizer()
+    {
+
+        Debug.Log("KILL RECOGNIZER");
+        if (keywordRecognizer != null)
+        {
+            keywordRecognizer.Stop();
+            keywordRecognizer.Dispose();
+        }
     }
 
     void TestDictation()

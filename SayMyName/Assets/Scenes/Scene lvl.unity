@@ -1961,7 +1961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1998,6 +1998,14 @@ PrefabInstance:
     - target: {fileID: 4439023779883948606, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_Name
       value: LustEnemy (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3990,6 +3998,11 @@ Transform:
   - {fileID: 1715380226}
   m_Father: {fileID: 409242730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &205941244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6931093194880805763, guid: fc7ed43edd957ec40b060083bde62927, type: 3}
+  m_PrefabInstance: {fileID: 40779472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &226236310
 GameObject:
   m_ObjectHideFlags: 0
@@ -6076,7 +6089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6114,6 +6127,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LustEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6133,7 +6154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6170,6 +6191,14 @@ PrefabInstance:
     - target: {fileID: 4439023779883948606, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_Name
       value: LustEnemy (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13412,7 +13441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13449,6 +13478,14 @@ PrefabInstance:
     - target: {fileID: 4439023779883948606, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_Name
       value: LustEnemy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20617,7 +20654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20654,6 +20691,14 @@ PrefabInstance:
     - target: {fileID: 4439023779883948606, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_Name
       value: LustEnemy (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26652,7 +26697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26690,6 +26735,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LustEnemy (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26709,7 +26762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26746,6 +26799,14 @@ PrefabInstance:
     - target: {fileID: 4439023779883948606, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_Name
       value: LustEnemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30415,7 +30476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30452,6 +30513,14 @@ PrefabInstance:
     - target: {fileID: 4439023779883948606, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_Name
       value: LustEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31884,7 +31953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31921,6 +31990,14 @@ PrefabInstance:
     - target: {fileID: 4439023779883948606, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_Name
       value: LustEnemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34366,7 +34443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34403,6 +34480,14 @@ PrefabInstance:
     - target: {fileID: 4439023779883948606, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_Name
       value: LustEnemy (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42848,7 +42933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.188337
+      value: -7.67
       objectReference: {fileID: 0}
     - target: {fileID: 2910071290716899742, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42885,6 +42970,14 @@ PrefabInstance:
     - target: {fileID: 4439023779883948606, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
       propertyPath: m_Name
       value: LustEnemy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 205941244}
+    - target: {fileID: 8771596274075857768, guid: b39e5a5243bb6b443a6945c566ea5161, type: 3}
+      propertyPath: shouldStartImmediately
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

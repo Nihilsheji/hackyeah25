@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Windows.Speech;
 using System.Collections.Generic;
 using System.Linq;
+using Sirenix.OdinInspector;
 
 public class VoiceKeywordRecognition : MonoBehaviour
 {
@@ -117,6 +118,12 @@ public class VoiceKeywordRecognition : MonoBehaviour
     public bool IsRunning()
     {
         return keywordRecognizer != null && keywordRecognizer.IsRunning;
+    }
+
+    [Button]
+    public void DebugLogIsRunning()
+    {
+        Debug.Log(IsRunning());
     }
 
     // Public method to stop recognition

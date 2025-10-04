@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 public class SimpleAIFollowScript : MonoBehaviour
 {
@@ -11,6 +12,12 @@ public class SimpleAIFollowScript : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotationSpeed = 5f;
     public float stoppingDistance = 2f; // Stop when this close to target
+
+    [Header("Should start immediately")]
+    public bool shouldStartImmediately = true;
+
+    [Header("Is Following")]
+    public bool isFollowing = false;
 
     [Header("Optional: Use NavMesh")]
     public bool useNavMesh = false;
@@ -28,11 +35,30 @@ public class SimpleAIFollowScript : MonoBehaviour
                 navAgent.stoppingDistance = stoppingDistance;
             }
         }
+
+        if(shouldStartImmediately)
+        {
+            this.isFollowing = true;
+        }
+    }
+
+    [Button]
+    public void StartFollowing()
+    {
+        this.isFollowing = true;
+    }
+
+    [Button]
+    public void StopFollowing()
+    {
+        this.isFollowing = false;
     }
 
     void Update()
     {
         if (target == null) return;
+
+        if (!isFollowing) return;
 
         if (useNavMesh && navAgent != null)
         {

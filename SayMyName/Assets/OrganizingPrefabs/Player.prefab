@@ -79,10 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keywordRecognizedEvent: {fileID: 11400000, guid: 2fb876dbfeae09d40b19beb87b3fc961, type: 2}
   testKeywords:
-  - test
-  - hello
-  - unity
-  - microphone
+  - lust
   confidenceLevel: 2
   showOnScreenDebug: 0
 --- !u!1001 &9214087552334404041

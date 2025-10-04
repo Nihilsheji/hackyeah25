@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8023f8a86929db4ea9062767f9b31c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeathSequenceFinished: {fileID: 11400000, guid: 64480575ff301f84fa181907ebdc877b, type: 2}
   fadeSpeed: 1
   fadeImage: {fileID: 3369106391639993791}
   deathText: {fileID: 2185084479957094102}
@@ -180,6 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8407553450802048853}
   - component: {fileID: 7033709247206939762}
+  - component: {fileID: 8805819672340221320}
   m_Layer: 0
   m_Name: VoiceRecognition
   m_TagString: Untagged
@@ -219,6 +221,46 @@ MonoBehaviour:
   - lust
   confidenceLevel: 2
   showOnScreenDebug: 0
+--- !u!114 &8805819672340221320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4440445793548252561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7033709247206939762}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 84e3e2b54599fea44a08af605d5c375e, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}
 --- !u!1001 &9214087552334404041
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -3,9 +3,12 @@ using UnityEngine.UI;
 using System.Collections;
 using Sirenix.OdinInspector;
 using TMPro;
+using UnityAtoms.BaseAtoms;
 
 public class FadeToBlack : MonoBehaviour
 {
+    [SerializeField] private VoidEvent DeathSequenceFinished;
+
     [Header("Fade Settings")]
     public float fadeSpeed = 1f; // Time in seconds for fade
 
@@ -17,10 +20,32 @@ public class FadeToBlack : MonoBehaviour
 
     private bool isFading = false;
 
+    private Coroutine currentCoroutine;
+
     void Start()
     {
         // Start with transparent (no fade)
         SetAlpha(0f);
+    }
+
+    private void OnEnable()
+    {
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+            currentCoroutine = null;
+        }
+
+        SetAlpha(0f);
+    }
+
+    private void OnDisable()
+    {
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+            currentCoroutine = null;
+        }
     }
 
     // Fade to black
@@ -29,7 +54,13 @@ public class FadeToBlack : MonoBehaviour
     {
         if (!isFading)
         {
-            StartCoroutine(FadeCoroutine(0f, 1f));
+            if(currentCoroutine != null)
+            {
+                StopCoroutine(currentCoroutine);
+                currentCoroutine = null;
+            }
+
+            currentCoroutine = StartCoroutine(FadeCoroutine(0f, 1f));
         }
     }
 
@@ -39,7 +70,13 @@ public class FadeToBlack : MonoBehaviour
     {
         if (!isFading)
         {
-            StartCoroutine(FadeCoroutine(1f, 0f));
+            if (currentCoroutine != null)
+            {
+                StopCoroutine(currentCoroutine);
+                currentCoroutine = null;
+            }
+
+            currentCoroutine = StartCoroutine(FadeCoroutine(1f, 0f));
         }
     }
 
@@ -68,6 +105,8 @@ public class FadeToBlack : MonoBehaviour
 
         SetAlpha(endAlpha);
         isFading = false;
+
+        DeathSequenceFinished.Raise();
     }
 
     // Set the alpha of the fade image

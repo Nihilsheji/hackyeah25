@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749983e915246c743b833d626e4b119a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keywordRecognizedEvent: {fileID: 11400000, guid: 2fb876dbfeae09d40b19beb87b3fc961, type: 2}
   testKeywords:
   - test
   - hello

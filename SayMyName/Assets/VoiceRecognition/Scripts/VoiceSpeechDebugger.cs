@@ -2,9 +2,12 @@ using UnityEngine;
 using UnityEngine.Windows.Speech;
 using System.Collections.Generic;
 using System.Linq;
+using UnityAtoms.BaseAtoms;
 
 public class WindowsSpeechDebugger : MonoBehaviour
 {
+    [SerializeField] private StringEvent keywordRecognizedEvent;
+
     [Header("Test Settings")]
     [SerializeField] private string[] testKeywords = new string[] { "test", "hello", "unity", "microphone" };
     [SerializeField] private ConfidenceLevel confidenceLevel = ConfidenceLevel.Low;
@@ -207,6 +210,7 @@ public class WindowsSpeechDebugger : MonoBehaviour
     void OnKeywordRecognized(PhraseRecognizedEventArgs args)
     {
         recognitionCount++;
+        keywordRecognizedEvent.Raise(args.text);
         lastRecognitionTime = Time.time;
         
         LogMessage($">>> RECOGNITION SUCCESS! <<<");

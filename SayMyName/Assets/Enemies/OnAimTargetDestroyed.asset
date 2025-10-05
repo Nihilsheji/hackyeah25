@@ -9,16 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593b70f10d7bb41c78d42c7e8b6609da, type: 3}
-  m_Name: IsPlayerImmortal
+  m_Script: {fileID: 11500000, guid: 09747f8c6d9954e4a81c09bb7f6e44a6, type: 3}
+  m_Name: OnAimTargetDestroyed
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _id: 
-  _value: 1
-  _changed: {fileID: 0}
-  _changedWithHistory: {fileID: 0}
-  _triggerChangedOnOnEnable: 0
-  _triggerChangedWithHistoryOnOnEnable: 0
-  _oldValue: 1
-  _initialValue: 1
-  _preChangeTransformers: []
+  _replayBufferSize: 1
+  _inspectorRaiseValue: {fileID: 0}

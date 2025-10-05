@@ -124,6 +124,14 @@ PrefabInstance:
       propertyPath: targetKeyword
       value: lust
       objectReference: {fileID: 0}
+    - target: {fileID: 7829327597586668270, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      propertyPath: targetRenderer
+      value: 
+      objectReference: {fileID: 7632292469925216460}
+    - target: {fileID: 8444467427429233542, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      propertyPath: targetRenderer
+      value: 
+      objectReference: {fileID: 7632292469925216460}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7506293786981493817, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
@@ -262,5 +270,10 @@ PrefabInstance:
 --- !u!4 &6563738470568339202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3717617627639266527, guid: 5593fa2ac175e414bb390f2076c18e0f, type: 3}
+  m_PrefabInstance: {fileID: 7530217408093592541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &7632292469925216460 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 102436299992570641, guid: 5593fa2ac175e414bb390f2076c18e0f, type: 3}
   m_PrefabInstance: {fileID: 7530217408093592541}
   m_PrefabAsset: {fileID: 0}

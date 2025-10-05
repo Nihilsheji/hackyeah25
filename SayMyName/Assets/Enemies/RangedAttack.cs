@@ -77,7 +77,14 @@ namespace Assets.Enemies
             Vector3 spawnPos = spawnPoint != null ? spawnPoint.position : transform.position;
 
             // Create projectile
-            GameObject projectile = Instantiate(projectilePrefab, spawnPos, transform.rotation);
+            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, 0, 0));
+            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -2.5f, 0));
+            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -5.0f, 0));
+        }
+
+        public void SpawnProjectile(Vector3 spawnPos, Quaternion rotation, Vector3 forceVectorOffset)
+        {
+            GameObject projectile = Instantiate(projectilePrefab, spawnPos, rotation);
 
             GameObject.Destroy(projectile, projectileLifetime);
 
@@ -85,7 +92,7 @@ namespace Assets.Enemies
             Rigidbody rb = projectile.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.velocity = transform.forward * projectileSpeed;
+                rb.velocity = transform.rotation * Vector3.forward * projectileSpeed + forceVectorOffset;
             }
 
             // Pass damage to projectile

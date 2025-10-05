@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2828, y: 1.2828, z: 1.2828}
+  m_LocalScale: {x: 0.90182126, y: 0.90182126, z: 0.90182126}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4633679880323835915}
@@ -93,7 +93,7 @@ Transform:
   m_GameObject: {fileID: 7703475254327445876}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6931095, z: 0.21635067}
+  m_LocalPosition: {x: 0, y: 1.083, z: 0.06}
   m_LocalScale: {x: 0.32780433, y: 0.32780436, z: 0.32780433}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -124,7 +124,7 @@ Transform:
   m_GameObject: {fileID: 9045127954783828807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.49}
+  m_LocalPosition: {x: 0, y: 0, z: 4.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -192,15 +192,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.520852
+      value: 2.6655977
       objectReference: {fileID: 0}
     - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 13.4776945
+      value: 9.475088
       objectReference: {fileID: 0}
     - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.18886
+      value: 2.4496458
       objectReference: {fileID: 0}
     - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -254,7 +254,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c61895a8c922e04cabadc27251bb600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aimTarget: {fileID: 0}
   projectilePrefab: {fileID: 4000978255731853522, guid: ae4011543282ca149acfbcde62c81830, type: 3}
   spawnPoint: {fileID: 3775297877827716623}
   projectileSpeed: 30
@@ -276,7 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraGameObjectVariable: {fileID: 11400000, guid: b6060046c4cabe4448e065c4734d3b67, type: 2}
   rotationSpeed: 5
-  IsActiveImmediately: 0
+  IsActiveImmediately: 1
   aimTarget: {fileID: 6901956220465781568}
 --- !u!54 &7410779063584086662
 Rigidbody:

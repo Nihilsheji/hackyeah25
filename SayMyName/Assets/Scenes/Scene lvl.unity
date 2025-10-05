@@ -11152,6 +11152,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2796865784808195365, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3636609352113705539, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
 --- !u!4 &324308221 stripped
 Transform:
@@ -29468,6 +29471,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5852403304388793142, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
+      propertyPath: m_text
+      value: You've wasted your one chance to walk away. You're a fool if you think
+        you'll make it down to the very bottom.
+      objectReference: {fileID: 0}
     - target: {fileID: 8585519754861684975, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
       propertyPath: m_text
       value: Gluttony
@@ -29477,6 +29485,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2796865784808195365, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3636609352113705539, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
@@ -35553,6 +35564,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2796865784808195365, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3636609352113705539, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
@@ -58730,6 +58744,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5852403304388793142, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
+      propertyPath: m_text
+      value: Do not fret, we shall deal with him as we dealt with his sister. Do
+        you still recall her, priest? Do you recall how sweetly she wept when we
+        broke her bones?
+      objectReference: {fileID: 0}
     - target: {fileID: 8585519754861684975, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
       propertyPath: m_text
       value: Greed
@@ -58739,6 +58759,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2796865784808195365, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3636609352113705539, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0b85a2367d3db0942bf41709b3076ebb, type: 3}

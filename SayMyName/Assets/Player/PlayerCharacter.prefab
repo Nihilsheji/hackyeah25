@@ -432,6 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AimDistance: 5
   cameraGameObjectVariable: {fileID: 11400000, guid: b6060046c4cabe4448e065c4734d3b67, type: 2}
+  OnAimTargetDestroyedEvent: {fileID: 11400000, guid: 2a52a7559ea01ff4388b96f185b67d3d, type: 2}
 --- !u!1 &3854807254061387545
 GameObject:
   m_ObjectHideFlags: 0

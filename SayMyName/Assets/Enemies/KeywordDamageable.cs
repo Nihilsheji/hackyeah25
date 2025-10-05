@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class KeywordDamageable : MonoBehaviour, IKeywordReactable
 {
-    [SerializeField] private AimTarget isAimedAt;
+    [SerializeField] private AimTarget aimTarget;
 
     public void OnKeywordRecognized()
     {
-        if (isAimedAt == false)
+        if (aimTarget.IsAimedAt == false)
             return;
 
         Destroy(gameObject);

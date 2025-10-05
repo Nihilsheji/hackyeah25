@@ -157,7 +157,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -415,7 +415,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -722,6 +722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c4b26cd08c9474d87487cf4d71c7d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathClipPlayer: {fileID: 4129381358887586737, guid: fa81ee775f53ba4448aec437fa489ee6, type: 3}
 --- !u!4 &7599581945350168264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3127079539383358916, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}

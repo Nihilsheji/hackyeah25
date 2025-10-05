@@ -11,6 +11,11 @@ public class KeywordDamageable : MonoBehaviour, IKeywordReactable
         if (aimTarget.IsAimedAt == false)
             return;
 
-        Destroy(gameObject);
+        var deathHandler = gameObject.GetComponent<EnemyDeathHandler>();
+        
+        if(deathHandler != null )
+        {
+            deathHandler.Die();
+        }
     }
 }

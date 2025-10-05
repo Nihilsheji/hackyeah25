@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1742618183661273131
+--- !u!1 &1427721988890627226
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7618481187280691059}
-  - component: {fileID: 2243779460025077584}
+  - component: {fileID: 4058874536424381673}
+  - component: {fileID: 4789995963833064698}
   m_Layer: 0
   m_Name: Death SFX
   m_TagString: Untagged
@@ -17,32 +17,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7618481187280691059
+--- !u!4 &4058874536424381673
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742618183661273131}
+  m_GameObject: {fileID: 1427721988890627226}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3141962, y: 6.6265907, z: -3.4111786}
+  m_LocalPosition: {x: -7.0494075, y: 5.980452, z: -10.228491}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8102066688105426370}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &2243779460025077584
+--- !u!82 &4789995963833064698
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742618183661273131}
+  m_GameObject: {fileID: 1427721988890627226}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c647ffa2b6dfd44e58ba6ea63ac71f54, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7af31df30daf141258efe22c16d1c2ac, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
@@ -157,7 +157,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7618481187280691059}
+  - {fileID: 4058874536424381673}
   m_Father: {fileID: 8360873001903040295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7258470772971709658
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 8360873001903040295}
   - component: {fileID: 4129381358887586737}
   m_Layer: 0
-  m_Name: GluttonyDeathSoundPlayer
+  m_Name: GreedDeathSoundPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,4 +205,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f565d6188cefe4a833e624dcec7521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2243779460025077584}
+  audioSource: {fileID: 4789995963833064698}

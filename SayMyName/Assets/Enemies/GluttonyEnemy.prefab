@@ -350,6 +350,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.548
       objectReference: {fileID: 0}
+    - target: {fileID: 5200951017957211970, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      propertyPath: targetKeyword
+      value: gluttony
+      objectReference: {fileID: 0}
     - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.6655977

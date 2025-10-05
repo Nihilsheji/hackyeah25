@@ -278,6 +278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5200951017957211970, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      propertyPath: targetKeyword
+      value: greed
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6552884723970027728, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
     - {fileID: -3205225143282148879, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}

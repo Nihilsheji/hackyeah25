@@ -269,6 +269,8 @@ MonoBehaviour:
   - lust
   - lost
   - last
+  - gluttony
+  - greed
   confidenceLevel: 2
   showOnScreenDebug: 0
 --- !u!114 &8805819672340221320

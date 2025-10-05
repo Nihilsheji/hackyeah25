@@ -1,40 +1,43 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Threading.Tasks;
+using System.Collections;
 using Sirenix.OdinInspector;
 
 public class GameRestart : MonoBehaviour
 {
-    private bool hasRestarted;
+    [SerializeField] private string targetSceneName = "GameScene"; // The scene you want to reload
+    private bool isRestarting;
 
     [Button]
-    public async void RestartGame()
+    public void RestartGame()
     {
-        if (hasRestarted)
+        if (isRestarting)
             return;
 
-        hasRestarted = true;
+        StartCoroutine(RestartRoutine());
+    }
 
-        // Get the current active scene
-        Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;
+    private IEnumerator RestartRoutine()
+    {
+        isRestarting = true;
 
-        // Unload the scene first
-        AsyncOperation unloadOp = SceneManager.UnloadSceneAsync(sceneName);
-        if (unloadOp != null)
+        // Check if the scene is loaded
+        Scene targetScene = SceneManager.GetSceneByName(targetSceneName);
+        if (targetScene.isLoaded)
         {
-            while (!unloadOp.isDone)
-                await Task.Yield(); // Wait for unload to finish
+            // Unload the target scene first
+            AsyncOperation unloadOp = SceneManager.UnloadSceneAsync(targetScene);
+            yield return unloadOp;
         }
 
-        // Then load it again
-        AsyncOperation loadOp = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
-        if (loadOp != null)
-        {
-            while (!loadOp.isDone)
-                await Task.Yield(); // Wait for load to finish
-        }
+        // Load the scene again additively
+        AsyncOperation loadOp = SceneManager.LoadSceneAsync(targetSceneName, LoadSceneMode.Additive);
+        yield return loadOp;
 
-        hasRestarted = false;
+        // Optionally set it active again
+        Scene newScene = SceneManager.GetSceneByName(targetSceneName);
+        SceneManager.SetActiveScene(newScene);
+
+        isRestarting = false;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sirenix.OdinInspector;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,18 @@ namespace Assets.Enemies
         public float fireRate = 0.5f; // Time between shots
         public int damage = 10;
         public float projectileLifetime = 5.0f;
+        public bool IsActiveImmediately = false;
+
+        private bool IsActive = false;
 
         private float nextUseTime = 0f;
+
+        private void Start()
+        {
+            if(this.IsActiveImmediately) {
+                this.Activate();
+            }
+        }
 
         public void Update()
         {
@@ -37,9 +48,23 @@ namespace Assets.Enemies
             }
         }
 
+        [Button]
+        public void Activate()
+        {
+            this.IsActive = true;
+        }
+
+        [Button]
+        public void Deactivate()
+        {
+            this.IsActive = false;
+        }
+
         // Call this method to shoot (from any script)
         public void Shoot()
         {
+            if (!IsActive) return;
+
             Debug.Log("Shooting");
 
             if (projectilePrefab == null)

@@ -16,15 +16,22 @@ namespace Assets.Enemies
 
         [Header("Movement Settings")]
         public float rotationSpeed = 5f;
+        public bool IsActiveImmediately = false;
 
         public bool IsInitialized { get; private set; }
         public Transform aimTarget;
 
 
         private Transform target; // The object to follow (usually the player)
-        private bool isActive = true;
+        private bool isActive = false;
 
-        void Start() {}
+        void Start()
+        {
+            if (IsActiveImmediately)
+            {
+                this.Activate();
+            }
+        }
 
         private void OnEnable()
         {

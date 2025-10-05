@@ -8,6 +8,7 @@ public class PlayerDamageHandler : MonoBehaviour
     [SerializeField] private IntEvent damagePlayerEvent;
     [SerializeField] private VoidEvent playerDied;
     [SerializeField] private BoolVariable isPlayerImmortal;
+    [SerializeField] private AudioSource deathAudioSource;
 
     private bool _isPlayerDead;
 
@@ -28,6 +29,11 @@ public class PlayerDamageHandler : MonoBehaviour
 
         if (_isPlayerDead == true)
             return;
+
+        if(deathAudioSource != null)
+        {
+            deathAudioSource.Play();
+        }
 
         _isPlayerDead = true;
         playerDied.Raise();

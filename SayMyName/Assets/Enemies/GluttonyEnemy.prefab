@@ -111,7 +111,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c647ffa2b6dfd44e58ba6ea63ac71f54, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4000978255731853522, guid: ae4011543282ca149acfbcde62c81830, type: 3}
   spawnPoint: {fileID: 3775297877827716623}
   projectileSpeed: 30
-  fireRate: 1
+  fireRate: 2
   damage: 10
   projectileLifetime: 5
   IsActiveImmediately: 0

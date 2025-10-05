@@ -9,6 +9,8 @@ public class PlayerDamageHandler : MonoBehaviour
     [SerializeField] private VoidEvent playerDied;
     [SerializeField] private BoolVariable isPlayerImmortal;
 
+    private bool _isPlayerDead;
+
     private void OnEnable()
     {
         damagePlayerEvent.Register(handleDamagePlayerEvent);
@@ -24,6 +26,10 @@ public class PlayerDamageHandler : MonoBehaviour
         if (isPlayerImmortal.Value == true)
             return;
 
+        if (_isPlayerDead == true)
+            return;
+
+        _isPlayerDead = true;
         playerDied.Raise();
     }
 }

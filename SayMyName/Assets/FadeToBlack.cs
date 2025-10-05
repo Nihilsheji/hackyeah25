@@ -8,6 +8,7 @@ using UnityAtoms.BaseAtoms;
 public class FadeToBlack : MonoBehaviour
 {
     [SerializeField] private VoidEvent DeathSequenceFinished;
+    [SerializeField] private BoolVariable IsSkipNextFade;
 
     [Header("Fade Settings")]
     public float fadeSpeed = 1f; // Time in seconds for fade
@@ -22,14 +23,17 @@ public class FadeToBlack : MonoBehaviour
 
     private Coroutine currentCoroutine;
 
-    void Start()
+    void Awake()
     {
+        StopAllCoroutines();
         // Start with transparent (no fade)
         SetAlpha(0f);
     }
 
     private void OnEnable()
     {
+        isFading = false;
+
         if (currentCoroutine != null)
         {
             StopCoroutine(currentCoroutine);
@@ -41,17 +45,19 @@ public class FadeToBlack : MonoBehaviour
 
     private void OnDisable()
     {
-        if (currentCoroutine != null)
-        {
-            StopCoroutine(currentCoroutine);
-            currentCoroutine = null;
-        }
+        StopAllCoroutines();
     }
 
     // Fade to black
     [Button]
     public void FadeOut()
     {
+        if (IsSkipNextFade.Value == true)
+        {
+            IsSkipNextFade.Value = false;
+            return;
+        }
+
         if (!isFading)
         {
             if(currentCoroutine != null)
@@ -106,6 +112,7 @@ public class FadeToBlack : MonoBehaviour
         SetAlpha(endAlpha);
         isFading = false;
 
+        IsSkipNextFade.Value = true;
         DeathSequenceFinished.Raise();
     }
 

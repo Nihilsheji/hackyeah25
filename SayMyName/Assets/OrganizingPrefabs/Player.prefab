@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathSequenceFinished: {fileID: 11400000, guid: 64480575ff301f84fa181907ebdc877b, type: 2}
+  IsSkipNextFade: {fileID: 11400000, guid: 9495937cb2994d04c874a78e564a7978, type: 2}
   fadeSpeed: 1
   fadeImage: {fileID: 3369106391639993791}
   deathText: {fileID: 2185084479957094102}

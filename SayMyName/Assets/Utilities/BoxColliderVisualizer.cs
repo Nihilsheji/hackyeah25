@@ -1,9 +1,10 @@
 using UnityEngine;
 
-#if UNITY_EDITOR
+
 [RequireComponent(typeof(BoxCollider))]
 public class BoxColliderVisualizer : MonoBehaviour
 {
+#if UNITY_EDITOR
     [Header("Visualization Settings")]
     [Range(0f, 1f)] public float transparency = 0.3f;
     public Color color = new Color(0f, 1f, 0f, 0.3f); // default green
@@ -44,6 +45,8 @@ public class BoxColliderVisualizer : MonoBehaviour
 
         // Restore the original Gizmos color
         Gizmos.color = oldColor;
+
+
     }
-}
 #endif
+}

@@ -45,7 +45,8 @@ public class AimCone : MonoBehaviour
 
         for (int i = 0; i < aimTargets.Count; i++)
         {
-            if (Vector3.Distance(cameraGameObject.transform.position, aimTargets[i].transform.position) <= AimDistance)
+            float distance = Vector3.Distance(cameraGameObject.transform.position, aimTargets[i].transform.position);
+            if (distance <= AimDistance)
             {
                 aimTargets[i].OnInAimCone();
             }
@@ -63,7 +64,6 @@ public class AimCone : MonoBehaviour
         if (other.gameObject.TryGetComponent<AimTarget>(out aimTarget) && aimTargets.Contains(aimTarget) == false)
         {
             aimTargets.Add(aimTarget);
-            aimTarget.OnInAimCone();
         }
     }
 
@@ -74,7 +74,6 @@ public class AimCone : MonoBehaviour
         if (other.gameObject.TryGetComponent<AimTarget>(out aimTarget) && aimTargets.Contains(aimTarget) == false)
         {
             aimTargets.Remove(aimTarget);
-            aimTarget.OnOutOfAimCone();
         }
     }
 

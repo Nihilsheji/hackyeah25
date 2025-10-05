@@ -84,11 +84,97 @@ PrefabInstance:
       propertyPath: m_Name
       value: ModelEnemyLust
       objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.6303457e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.013958808
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0015230523
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.88727623
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4612385
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000012161399
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000007238136
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 54.934
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932260579683318796, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -4796087966312479991, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5407238271997190432}
+    - targetCorrespondingSourceObject: {fileID: -5679737656135935423, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6492059745887191080}
   m_SourcePrefab: {fileID: 100100000, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+--- !u!1 &6262687135996580034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4796087966312479991, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+  m_PrefabInstance: {fileID: 7753324591758922699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5407238271997190432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6262687135996580034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee4e13a8cdf65349b85919269c52eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationAmplitude: 3
+  rotationDuration: 2
+  rotationAxis: {x: 2, y: 2, z: 0}
+--- !u!1 &6536081035976558986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5679737656135935423, guid: 98328b0740283304099bf9f3827cfc85, type: 3}
+  m_PrefabInstance: {fileID: 7753324591758922699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6492059745887191080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6536081035976558986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee4e13a8cdf65349b85919269c52eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationAmplitude: 3
+  rotationDuration: 3
+  rotationAxis: {x: 2, y: 2, z: 2}
 --- !u!4 &7787830819357864992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 98328b0740283304099bf9f3827cfc85, type: 3}

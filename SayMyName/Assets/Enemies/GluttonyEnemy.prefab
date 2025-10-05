@@ -1,5 +1,73 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2313953834920624141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7422061660704540810}
+  - component: {fileID: 8469956918105930468}
+  - component: {fileID: 1322430509002944019}
+  m_Layer: 8
+  m_Name: DamagerCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7422061660704540810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2313953834920624141}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2828, y: 1.2828, z: 1.2828}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4633679880323835915}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &8469956918105930468
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2313953834920624141}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2.14
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1322430509002944019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2313953834920624141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6209b77bfa203b14b8d4029b11970d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePlayerEvent: {fileID: 11400000, guid: 531c27cab0d8d144098704efe3eda732, type: 2}
+  damageAmount: 0
 --- !u!1 &7703475254327445876
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,8 +191,20 @@ PrefabInstance:
       value: -1.548
       objectReference: {fileID: 0}
     - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.520852
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.7835
+      value: 13.4776945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.18886
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6552884723970027728, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
@@ -135,6 +215,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 170185206757876487, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6901956220465781568}
+    - targetCorrespondingSourceObject: {fileID: 170185206757876487, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7422061660704540810}
     - targetCorrespondingSourceObject: {fileID: 3127079539383358916, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7903973127217480455}
@@ -171,12 +254,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c61895a8c922e04cabadc27251bb600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimTarget: {fileID: 0}
   projectilePrefab: {fileID: 4000978255731853522, guid: ae4011543282ca149acfbcde62c81830, type: 3}
   spawnPoint: {fileID: 3775297877827716623}
   projectileSpeed: 30
   fireRate: 1
   damage: 10
   projectileLifetime: 5
+  IsActiveImmediately: 0
 --- !u!114 &-6284985320914080692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraGameObjectVariable: {fileID: 11400000, guid: b6060046c4cabe4448e065c4734d3b67, type: 2}
   rotationSpeed: 5
+  IsActiveImmediately: 0
   aimTarget: {fileID: 6901956220465781568}
 --- !u!54 &7410779063584086662
 Rigidbody:

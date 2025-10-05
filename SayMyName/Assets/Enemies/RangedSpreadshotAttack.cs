@@ -11,6 +11,8 @@ namespace Assets.Enemies
 {
     internal class RangedSpreadshotAttack : MonoBehaviour
     {
+        [SerializeField] AudioSource attackAudioSource;
+
         [Header("Projectile Settings")]
         public GameObject projectilePrefab; // Drag your projectile prefab here
         public Transform spawnPoint; // Where projectile spawns (optional)
@@ -77,6 +79,11 @@ namespace Assets.Enemies
 
             // Determine spawn position
             Vector3 spawnPos = spawnPoint != null ? spawnPoint.position : transform.position;
+
+            if(attackAudioSource != null)
+            {
+                attackAudioSource.Play();
+            }
 
             SpawnProjectile(spawnPos, Quaternion.identity);
             SpawnCone();

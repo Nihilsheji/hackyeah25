@@ -78,12 +78,12 @@ namespace Assets.Enemies
 
             // Create projectile
             SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, 0, 0));
-            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -5.0f, 0));
-            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -10.0f, 0));
-            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -20.0f, 0));
+            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -5.0f, 0), 0.8f);
+            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -10.0f, 0), 0.6f);
+            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -20.0f, 0), 0.4f);
         }
 
-        public void SpawnProjectile(Vector3 spawnPos, Quaternion rotation, Vector3 forceVectorOffset)
+        public void SpawnProjectile(Vector3 spawnPos, Quaternion rotation, Vector3 forceVectorOffset, float speedMultiplier = 1)
         {
             GameObject projectile = Instantiate(projectilePrefab, spawnPos, rotation);
 
@@ -93,7 +93,7 @@ namespace Assets.Enemies
             Rigidbody rb = projectile.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.velocity = transform.rotation * Vector3.forward * projectileSpeed + forceVectorOffset;
+                rb.velocity = transform.rotation * Vector3.forward * projectileSpeed * speedMultiplier + forceVectorOffset;
             }
 
             // Pass damage to projectile

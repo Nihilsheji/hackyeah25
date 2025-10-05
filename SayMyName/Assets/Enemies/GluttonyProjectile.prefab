@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 7571834213893700431}
   - component: {fileID: -602344373875451597}
   m_Layer: 0
-  m_Name: GreedProjectile
+  m_Name: GluttonyProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

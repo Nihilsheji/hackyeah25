@@ -354,6 +354,10 @@ PrefabInstance:
       propertyPath: targetKeyword
       value: gluttony
       objectReference: {fileID: 0}
+    - target: {fileID: 7829327597586668270, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      propertyPath: targetRenderer
+      value: 
+      objectReference: {fileID: 4148982793516579693}
     - target: {fileID: 8176346149268766673, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.6655977
@@ -542,6 +546,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 6084321546123987151}
   m_SourcePrefab: {fileID: 100100000, guid: 6136baacb222a0e40a19d67ea5a8b3de, type: 3}
+--- !u!23 &4148982793516579693 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6120128768922571484, guid: 6136baacb222a0e40a19d67ea5a8b3de, type: 3}
+  m_PrefabInstance: {fileID: 7888957922347329969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4338272333934195781 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5859067516341018100, guid: 6136baacb222a0e40a19d67ea5a8b3de, type: 3}

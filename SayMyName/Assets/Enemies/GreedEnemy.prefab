@@ -282,6 +282,10 @@ PrefabInstance:
       propertyPath: targetKeyword
       value: greed
       objectReference: {fileID: 0}
+    - target: {fileID: 7829327597586668270, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
+      propertyPath: targetRenderer
+      value: 
+      objectReference: {fileID: 1758499649780209065}
     m_RemovedComponents:
     - {fileID: 6552884723970027728, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
     - {fileID: -3205225143282148879, guid: 6406f0ccab2c13f458b6f54132d31c3e, type: 3}
@@ -503,6 +507,11 @@ MonoBehaviour:
   rotationAmplitude: 5
   rotationDuration: 2
   rotationAxis: {x: 2, y: 2, z: 0}
+--- !u!23 &1758499649780209065 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5340686173776056013, guid: da70faa142348414d901a9a4f7763c15, type: 3}
+  m_PrefabInstance: {fileID: 5943238417827453796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4682175233676227113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1333331895473695053, guid: da70faa142348414d901a9a4f7763c15, type: 3}

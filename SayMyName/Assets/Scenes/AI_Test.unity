@@ -214,7 +214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4633679880323835915, guid: f335577699a434e44ac546e89ed5b2c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.45
+      value: 5.08
       objectReference: {fileID: 0}
     - target: {fileID: 4633679880323835915, guid: f335577699a434e44ac546e89ed5b2c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -251,10 +251,6 @@ PrefabInstance:
     - target: {fileID: 6176143444223949739, guid: f335577699a434e44ac546e89ed5b2c1, type: 3}
       propertyPath: m_Name
       value: GreedEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 7410779063584086662, guid: f335577699a434e44ac546e89ed5b2c1, type: 3}
-      propertyPath: m_Mass
-      value: 0.0000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

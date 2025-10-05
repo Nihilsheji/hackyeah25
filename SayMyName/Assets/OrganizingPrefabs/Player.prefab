@@ -283,6 +283,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5772329143339867791}
     m_Modifications:
+    - target: {fileID: 182928103019423522, guid: fc7ed43edd957ec40b060083bde62927, type: 3}
+      propertyPath: AimDistance
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1767684457565684497, guid: fc7ed43edd957ec40b060083bde62927, type: 3}
       propertyPath: smooth
       value: 50

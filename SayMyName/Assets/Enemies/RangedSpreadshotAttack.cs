@@ -78,14 +78,14 @@ namespace Assets.Enemies
             // Determine spawn position
             Vector3 spawnPos = spawnPoint != null ? spawnPoint.position : transform.position;
 
-            SpawnProjectile(spawnPos, transform.rotation);
+            SpawnProjectile(spawnPos, Quaternion.identity);
             SpawnCone();
         }
 
         public void SpawnProjectile(Vector3 spawnPos, Quaternion rotation)
         {
             // Create projectile
-            GameObject projectile = Instantiate(projectilePrefab, spawnPos, rotation);
+            GameObject projectile = Instantiate(projectilePrefab, spawnPos, transform.rotation);
 
             GameObject.Destroy(projectile, projectileLifetime);
 
@@ -94,7 +94,7 @@ namespace Assets.Enemies
 
             if (rb != null)
             {
-                rb.velocity = transform.forward * projectileSpeed;
+                rb.velocity = rotation * transform.forward * projectileSpeed;
             }
 
             // Pass damage to projectile

@@ -10,6 +10,8 @@ public class Projectile : MonoBehaviour
     public int damageAmount = 1;
     public float lifetime = 5f; // Auto-destroy after this time
     public GameObject hitEffectPrefab; // Optional hit effect
+    public bool Slowdown = false;
+    public float SlowdownMulti = 0.5f;
 
     void Start()
     {

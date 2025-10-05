@@ -19,7 +19,7 @@ namespace Assets.Enemies
         public float projectileSpeed = 20f;
         public float fireRate = 0.5f; // Time between shots
         public int damage = 10;
-        public float projectileLifetime = 5.0f;
+        public float projectileLifetime = 2.0f;
         public bool IsActiveImmediately = false;
 
         private bool IsActive = false;
@@ -78,8 +78,9 @@ namespace Assets.Enemies
 
             // Create projectile
             SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, 0, 0));
-            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -2.5f, 0));
             SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -5.0f, 0));
+            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -10.0f, 0));
+            SpawnProjectile(spawnPos, transform.rotation, new Vector3(0, -20.0f, 0));
         }
 
         public void SpawnProjectile(Vector3 spawnPos, Quaternion rotation, Vector3 forceVectorOffset)
